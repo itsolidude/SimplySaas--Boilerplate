@@ -1,38 +1,38 @@
-# SimplySaaS
+# 🚀 SimplySaaS
 
 A modern SvelteKit boilerplate with Supabase authentication, shadcn-svelte components, and TypeScript designed to jumpstart your SaaS project.
 
-## Why I Created SimplySaaS
+## 💭 Why I Created SimplySaaS
 
 I've spent countless hours looking for a good Svelte 5 boilerplate that just works - one with a complete authentication setup including both email/password and OAuth, proper error handling, and all the essential features you need. The ones I found were either missing key features or built with UI libraries like DaisyUI or Mantine where I couldn't really control the code the way I wanted.
 
-### Why These Tech Choices?
+### 🤔 Why These Tech Choices?
 
 I hold somewhat of a grudge against Next.js since it was clearly made to lock you into Vercel's ecosystem. Svelte 5, on the other hand, was made with developer experience in mind. It gives you the freedom to build and deploy however you want.
 
 I went with shadcn because I love that we actually own the code. You get the components right in your project where you can modify them however you need. No more being stuck with someone else's design decisions.
 
-### What's Included
+### ✨ What's Included
 
 I made sure this template has everything you need for a production-ready auth system:
 
-- Email/password registration with proper validation
-- Google OAuth that actually works
-- Complete password reset flow
-- Error handling that gives real feedback
-- Email verification that just works
+- ✉️ Email/password registration with proper validation
+- 🔑 Google OAuth that actually works
+- 🔄 Complete password reset flow
+- ⚡ Error handling that gives real feedback
+- ✅ Email verification that just works
 
-### Use It Freely
+### 🎁 Use It Freely
 
 I'm making SimplySaaS free for everyone to build their own SaaS products. You can:
 
-- Use it for commercial projects
-- Modify it however you want
-- Build and sell products with it
+- 💼 Use it for commercial projects
+- 🛠️ Modify it however you want
+- 💰 Build and sell products with it
 
 Just one rule (which is in the license):
 
-- Don't resell this template itself as a paid product - that would defeat the whole purpose of making it free for everyone.
+- ❌ Don't resell this template itself as a paid product - that would defeat the whole purpose of making it free for everyone.
 
 ## Core Features
 
@@ -58,14 +58,14 @@ Just one rule (which is in the license):
   - Superforms with Zod validation
   - Tailwind CSS for styling
 
-## Getting Started
+## 🏁 Getting Started
 
-### Prerequisites
+### 📋 Prerequisites
 
 1. Node.js 18+ and npm installed
 2. A Supabase account
 
-### Installation
+### ⚙️ Installation
 
 1. Clone the repository:
 
@@ -80,7 +80,7 @@ cd SimplySaaS
 npm install
 ```
 
-### Supabase Setup
+### 🛠️ Supabase Setup
 
 1. Create a new Supabase project at https://supabase.com and find your supabase-url and ANON-key.
 2. Create `.env.local`
@@ -96,7 +96,7 @@ PUBLIC_SUPABASE_ANON_KEY=your_anon_key
    - Customize auth behavior and routes
    - Modify protection rules
 
-## Technologies
+## 🛠️ Technologies
 
 - **Framework**: SvelteKit with Svelte 5 runes
 - **Language**: TypeScript
@@ -105,7 +105,7 @@ PUBLIC_SUPABASE_ANON_KEY=your_anon_key
 - **Icons**: unplugin-icons with SSR support
 - **Forms**: sveltekit-superforms with Zod schema validation
 
-### Google OAuth Setup
+### 🔑 Google OAuth Setup
 
 For Google OAuth setup, follow [this video tutorial](https://youtu.be/2SEz6SK_ekE?t=446) (starting at 7:20). It shows how to:
 
@@ -114,7 +114,7 @@ For Google OAuth setup, follow [this video tutorial](https://youtu.be/2SEz6SK_ek
 
 No code changes are needed - just configuration in the Supabase dashboard.
 
-### Development
+### 💻 Development
 
 Start the development server:
 
@@ -124,7 +124,7 @@ npm run dev
 
 Visit http://localhost:5173 to see your app.
 
-## Auth Features
+## 🔒 Auth Features
 
 - **Form Validation**: Built with superforms and Zod schema validation
 - **Error Handling**: Proper error responses and user feedback
@@ -133,7 +133,7 @@ Visit http://localhost:5173 to see your app.
 - **Route Protection**: Public and private route handling
 - **UI Components**: Using [shadcn-svelte](https://next.shadcn-svelte.com/) (Next version) for form elements
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 src/
@@ -216,7 +216,7 @@ src/
 └── hooks.server.ts            # Server hooks (auth setup)
 ```
 
-## Authentication Flow
+## 🔑 Authentication Flow
 
 ### 1. Email/Password Authentication
 
@@ -253,14 +253,14 @@ if (event.locals.session && event.url.pathname === '/auth') {
 }
 ```
 
-### Code Quality Tools
+### 🛠️ Code Quality Tools
 
 - **TypeScript** - Static type checking
 - **ESLint** - Code linting
 - **Prettier** - Code formatting
 - **svelte-check** - Svelte type checking
 
-### Additional Tools
+### 🔧 Additional Tools
 
 - **shadcn-svelte** - Pre-built accessible UI components
 - **Tailwind CSS** - Utility-first styling
@@ -269,7 +269,7 @@ if (event.locals.session && event.url.pathname === '/auth') {
 - **Prettier** - Code formatting
 - **ESLint** - Code linting
 
-## Utils Structure Explanation
+## 📚 Utils Structure Explanation
 
 I've decided to use a simple and flat utils structure while maintaining compatibility with third-party libraries:
 
@@ -285,7 +285,7 @@ This structure provides several benefits:
 3. Flat directory structure reduces complexity while maintaining organization
 4. Easy to add new utilities without creating unnecessary hierarchy
 
-## Resources
+## 📚 Resources
 
 - [Svelte 5 Documentation](https://svelte.dev/blog/runes)
 - [Supabase Auth Documentation](https://supabase.com/docs/guides/auth)
