@@ -1,0 +1,200 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		/* Main colors */
+		--background: 210 40% 98%;
+		--foreground: 222 47% 11%;
+
+		/* Card and popover */
+		--card: 0 0% 100%;
+		--card-foreground: 222 47% 11%;
+		--popover: 0 0% 100%;
+		--popover-foreground: 222 47% 11%;
+
+		/* Primary - Professional blue */
+		--primary: 215 90% 50%;
+		--primary-foreground: 210 40% 98%;
+
+		/* Secondary - Softer blue */
+		--secondary: 215 25% 65%;
+		--secondary-foreground: 222 47% 11%;
+
+		/* Accent - Complementary color */
+		--accent: 245 60% 60%;
+		--accent-foreground: 210 40% 98%;
+
+		/* Muted */
+		--muted: 210 40% 96.1%;
+		--muted-foreground: 215 25% 40%;
+
+		/* Destructive */
+		--destructive: 0 84.2% 60.2%;
+		--destructive-foreground: 210 40% 98%;
+
+		/* Border, input, and ring */
+		--border: 214.3 31.8% 91.4%;
+		--input: 214.3 31.8% 91.4%;
+		--ring: 215 90% 50%;
+
+		/* Sidebar specific colors */
+		--sidebar-background: 0 0% 100%;
+		--sidebar-foreground: 222 47% 11%;
+		--sidebar-border: 214.3 31.8% 91.4%;
+		--sidebar-accent: 210 40% 96.1%;
+		--sidebar-accent-foreground: 222 47% 11%;
+		--sidebar-ring: 215 90% 50%;
+
+		/* Success, warning, info */
+		--success: 142 76% 36%;
+		--success-foreground: 210 40% 98%;
+		--warning: 38 92% 50%;
+		--warning-foreground: 210 40% 98%;
+		--info: 200 98% 39%;
+		--info-foreground: 210 40% 98%;
+
+		/* Border radius */
+		--radius: 0.5rem;
+	}
+
+	.dark {
+		/* Main colors */
+		--background: 222 47% 11%;
+		--foreground: 210 40% 98%;
+
+		/* Card and popover */
+		--card: 222 47% 11%;
+		--card-foreground: 210 40% 98%;
+		--popover: 222 47% 11%;
+		--popover-foreground: 210 40% 98%;
+
+		/* Primary - Professional blue */
+		--primary: 215 90% 50%;
+		--primary-foreground: 222 47% 11%;
+
+		/* Secondary - Softer blue */
+		--secondary: 215 25% 65%;
+		--secondary-foreground: 210 40% 98%;
+
+		/* Accent - Complementary color */
+		--accent: 245 60% 60%;
+		--accent-foreground: 210 40% 98%;
+
+		/* Muted */
+		--muted: 217.2 32.6% 17.5%;
+		--muted-foreground: 215 20.2% 65.1%;
+
+		/* Destructive */
+		--destructive: 0 62.8% 30.6%;
+		--destructive-foreground: 210 40% 98%;
+
+		/* Border, input, and ring */
+		--border: 217.2 32.6% 17.5%;
+		--input: 217.2 32.6% 17.5%;
+		--ring: 215 90% 50%;
+
+		/* Sidebar specific colors */
+		--sidebar-background: 222 47% 11%;
+		--sidebar-foreground: 210 40% 98%;
+		--sidebar-border: 217.2 32.6% 17.5%;
+		--sidebar-accent: 217.2 32.6% 17.5%;
+		--sidebar-accent-foreground: 210 40% 98%;
+		--sidebar-ring: 215 90% 50%;
+
+		/* Success, warning, info */
+		--success: 142 76% 36%;
+		--success-foreground: 210 40% 98%;
+		--warning: 38 92% 50%;
+		--warning-foreground: 210 40% 98%;
+		--info: 200 98% 39%;
+		--info-foreground: 210 40% 98%;
+	}
+}
+
+@layer base {
+	* {
+		@apply border-border;
+	}
+	html {
+		@apply antialiased scroll-smooth;
+	}
+	body {
+		@apply min-h-screen bg-background text-foreground;
+	}
+}
+
+/* Custom utility classes */
+@layer components {
+	/* Card shadow */
+	.card-hover {
+		@apply shadow-lg;
+	}
+
+	/* Text gradients */
+	.gradient-text {
+		@apply bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent;
+	}
+
+	/* Social auth buttons */
+	.social-auth-btn {
+		@apply w-full flex items-center justify-center gap-2 border border-gray-300 text-gray-700 hover:bg-gray-50 transition-colors rounded-md text-sm font-medium focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2;
+	}
+
+	/* Password strength indicators */
+	.strength-very-weak {
+		@apply bg-red-500;
+	}
+	.strength-weak {
+		@apply bg-orange-500;
+	}
+	.strength-fair {
+		@apply bg-yellow-500;
+	}
+	.strength-good {
+		@apply bg-blue-500;
+	}
+	.strength-strong {
+		@apply bg-green-500;
+	}
+}
+
+/* Utility classes */
+@layer utilities {
+	/* Hide scrollbar */
+	.hide-scrollbar {
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+	}
+	.hide-scrollbar::-webkit-scrollbar {
+		display: none;
+	}
+
+	/* Animations */
+	.fade-in {
+		animation: fadeIn 0.3s ease-in-out;
+	}
+	.slide-in-from-right {
+		animation: slideInFromRight 0.3s ease-in-out;
+	}
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes slideInFromRight {
+	from {
+		transform: translateX(100%);
+	}
+	to {
+		transform: translateX(0);
+	}
+}
