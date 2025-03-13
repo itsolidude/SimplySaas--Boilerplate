@@ -9,8 +9,8 @@
 	let isOpen = $state(false);
 
 	const navLinks = [
-		{ href: '/private/dashboard', label: 'Dashboard' },
-		{ href: '/private/tester', label: 'Tester' }
+		{ href: '/private/Link 1', label: 'Link 1' },
+		{ href: '/private/Link 2', label: 'Link 2' }
 	];
 </script>
 
