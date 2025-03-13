@@ -276,7 +276,7 @@ I've decided to use a simple and flat utils structure while maintaining compatib
 - `/lib/utils.ts`: A re-export file that maintains shadcn's expected import paths, keeping component installations working smoothly.
 - `/lib/utils/`: Contains all utility files with descriptive names that indicate their purpose:
   - `cn.ts`: Tailwind class merging utility used by shadcn components
-  - `supabase-session-warnings.ts`: Handles SSR-related warning suppression for Supabase auth (sepcifically one really annoying bug I mention in the file comment)
+  - `supabase-session-warnings.ts`: Handles SSR-related warning suppression for Supabase auth (specifically one really annoying bug I mention in the file comment)
 
 This structure provides several benefits:
 
