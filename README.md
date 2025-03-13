@@ -291,3 +291,6 @@ This structure provides several benefits:
 - [Supabase Auth Documentation](https://supabase.com/docs/guides/auth)
 - [SvelteKit Documentation](https://kit.svelte.dev/docs)
 - [shadcn-svelte Documentation](https://www.shadcn-svelte.com/)
+
+## ☕ Buy me a coffee
+- https://buymeacoffee.com/itsolidude
